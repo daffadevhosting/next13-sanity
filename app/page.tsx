@@ -60,8 +60,6 @@ export default function Home() {
         <a
           href="/studio"
           className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
         >
           <h2 className={inter.className}>
             NEXT13 Studio <span>-&gt;</span>

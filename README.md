@@ -1,6 +1,7 @@
 ### NEXT13-sanityStudio
 
-[http://localhost:3000/studio](http://localhost:3000/studio)
+[FrontEnd](https://next13-sanity.vercel.app/)
+[BackEnd](https://next13-sanity.vercel.app/studio)
 
 
 <img src="/Sanity-login.png" style="width: 100%;" alt=""/>
