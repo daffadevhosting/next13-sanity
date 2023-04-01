@@ -3,9 +3,10 @@
 [http://localhost:3000/studio](http://localhost:3000/studio)
 
 
-<img src="./Sanity-login.png" style="width: 100%;" alt=""/>
+<img src="/Sanity-login.png" style="width: 100%;" alt=""/>
 
 
+<a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdaffadevhosting%2Fnext13-sanity"><img src="https://vercel.com/button" alt="Deploy with Vercel"/></a>
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
