@@ -1,7 +1,7 @@
 import React from "react";
 import { client } from '../api/client'
-import css from "../../styles/page.module.css";
 import { groq } from "next-sanity";
+import css from "../../styles/page.module.css";
 
 
 const query = groq`
