@@ -5,7 +5,7 @@ import css from "../styles/page.module.css";
 function StudioNav(props: any) {
     return (
     <div className={css.navStudio}>
-        <div>
+        <div className={css.navStudioNav}>
             <Link href="/" className={css.navBack}><RiArrowGoBackFill/> Go Back</Link>
         </div>
         <>{props.renderDefault(props)}</>

@@ -14,15 +14,24 @@
   margin: auto;
 }
 
-.navStudio {
-  display: flex;
-  flex-direction: column;;
+.navStudioNav {
+    max-height: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8px 0;
 }
 
 .navBack {
-  border: 2px solid #363636;
-  padding: 5px 10px;
-  background: #191919;
-  border-radius: 25px;
-  margin: 0 25px;
+    border: 2px solid #363636;
+    padding: 5px 10px;
+    background: #191919;
+    border-radius: 25px;
+    margin: 0px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #fff;
 }

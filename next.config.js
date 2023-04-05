@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
-module.exports = {
+const { withPlaiceholder } = require("@plaiceholder/next");
+
+module.exports = withPlaiceholder ({
   reactStrictMode: true,
   experimental: { appDir: true },
   webpack(config) {
@@ -7,6 +9,6 @@ module.exports = {
     return config
   },
   images: {
-    domains: [],
+    domains: ['cdn.sanity.io'],
   }
-}
+});
