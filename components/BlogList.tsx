@@ -1,3 +1,4 @@
+import { Post } from '@/typings';
 import css from '../styles/page.module.css';
 import Image from 'next/image';
 import urlFor from '../lib/urlFor';
