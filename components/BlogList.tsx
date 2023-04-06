@@ -19,7 +19,7 @@ function BlogList({ posts }: Props) {
                 <article key={post._id} className={css.blogPost}>
                     <div className={css.Box}>
                       <div className={css.blogContentBox}>
-                        <h3>{post.title}</h3>
+                        <h3 className={css.title}>{post.title}</h3>
                           <div className={css.contentOverlay}>
                             <div className={css.contentText}>
                             {post.categories.map((category) => (
