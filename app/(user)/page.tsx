@@ -10,7 +10,8 @@ import css from "../../styles/page.module.css";
 const query = groq`
 *[_type == "post"] {
   ...,
-  "name": author -> name,
+  author->,
+  categories[]->
 } | order(_createdAt desc)
 `;
 
@@ -28,7 +29,7 @@ export default async function Home() {
   }
 
   const posts = await client.fetch(query);
-
+  
   return (
     <>
     <div className={css.container}>

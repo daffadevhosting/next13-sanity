@@ -6,7 +6,7 @@ type Base = {
     _id: string;
     _rev: string;
     _type: string;
-    _updateAt: string;
+    _updatedAt: string;
 };
 
 interface Post extends Base {

@@ -3,12 +3,16 @@ import css from "../styles/page.module.css";
 
 function Header() {
     return (
-        <header className={css.header}>
-        <div className={css.leftSide}>
-            <Link href="/">Header</Link>
-        </div>
-        <div className={css.rightSide}>
+        <header>
+        <div className={css.header}>
+            <div className={css.leftSide}>
+                <Link href="/">
+                    <h1 className={css.textLogo}>Header</h1>
+                </Link>
+            </div>
+            <div className={css.rightSide}>
 
+            </div>
         </div>
         </header>
     )

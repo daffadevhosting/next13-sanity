@@ -1,6 +1,7 @@
 import { Post } from '@/typings';
 import css from '../styles/page.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 import urlFor from '../lib/urlFor';
 
 
@@ -15,26 +16,44 @@ function BlogList({ posts }: Props) {
         <>
         <div className={css.gridPost}>
             {posts.map((post) => (
-                <div key={post._id} className={css.blogPost}>
+                <article key={post._id} className={css.blogPost}>
                     <div className={css.Box}>
+                      <div className={css.blogContentBox}>
+                        <h3>{post.title}</h3>
+                          <div className={css.contentOverlay}>
+                            <div className={css.contentText}>
+                            {post.categories.map((category) => (
+                                <div key={category._id}>
+                                <p>{category.title}</p>
+                                </div>
+                                ))}
+                            </div>
+                            <span className={css.deskripsi}>
+                              <p>{post.description}</p>
+                              </span>
+                            <Link className={css.button} href={`/article/${post.slug.current}`} key={post.slug.current}>Lanjut Baca</Link>
+                          </div>
+                      </div>
                     <Image
                     className={css.postImg}
                     src={urlFor(post.mainImage).url()}
                     alt=""
-                    width={300}
-                    height={300}
+                    width={380}
+                    height={240}
                     />
-                    <p className={css.blogTitle}>{post.title}</p>
-                    <p>
-                        {new Date(post._createdAt).toLocaleDateString
-                        ("id-ID", {
-                            day: "numeric",
-                            month: "long",
-                            year: "numeric",
-                        })}
-                    </p>
+                    <div className={css.outerBox}>
+                        <p className={css.author}>By {post.author.name}</p>
+                        <p>
+                            {new Date(post._createdAt).toLocaleDateString
+                            ("id-ID", {
+                                day: "numeric",
+                                month: "long",
+                                year: "numeric",
+                            })}
+                        </p>
                     </div>
-                </div>
+                  </div>
+                </article>
             ))}
         </div>
         </>

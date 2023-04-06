@@ -81,6 +81,7 @@
 
 html,
 body {
+  font-family: Poppins, sans-serif;
   width: 100vw;
   height: 100dvh;
   overflow-x: hidden;
@@ -95,6 +96,12 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+header {
+  background: rgba(23, 20, 20, 0.25);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.3px);
+  -webkit-backdrop-filter: blur(6.3px);
+}
 
 a {
   color: inherit;
@@ -106,3 +113,16 @@ a {
     color-scheme: dark;
   }
 }
+
+::-webkit-scrollbar {
+      width: 3px;
+      }
+::-webkit-scrollbar-track {
+      background: #e4e7eb;
+      }
+::-webkit-scrollbar-thumb {
+      background: #7d7d7d;
+      }
+::-webkit-scrollbar-thumb:hover {
+      background: #282828;
+      }

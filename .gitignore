@@ -15,6 +15,7 @@ package-lock.json
 
 # production
 /build
+/_styling_css
 
 # misc
 .DS_Store
