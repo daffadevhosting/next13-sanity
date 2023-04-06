@@ -7,8 +7,8 @@ export const apiVersion = process.env.NEXT_PUBLIC_SANITY_API_VERSION
 export const client = createClient({
   projectId,
   dataset,
-  apiVersion, // https://www.sanity.io/docs/api-versioning
-  useCdn: false, // if you're using ISR or only static generation at build time then you can set this to `false` to guarantee no stale content
+  apiVersion,
+  useCdn: false,
 })
 
-const data = await client.fetch(groq`*[]`)
+const data: any = await client.fetch(groq`*[]`)

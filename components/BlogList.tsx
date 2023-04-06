@@ -31,15 +31,15 @@ function BlogList({ posts }: Props) {
                             <span className={css.deskripsi}>
                               <p>{post.description}</p>
                               </span>
-                            <Link className={css.button} href={`/article/${post.slug.current}`} key={post.slug.current}>Lanjut Baca</Link>
+                            <Link className={css.buttonLink} href={`/article/${post.slug.current}`} key={post.slug.current}>Lanjut Baca</Link>
                           </div>
                       </div>
                     <Image
                     className={css.postImg}
                     src={urlFor(post.mainImage).url()}
                     alt=""
-                    width={380}
-                    height={240}
+                    width={580}
+                    height={340}
                     />
                     <div className={css.outerBox}>
                         <p className={css.author}>By {post.author.name}</p>
