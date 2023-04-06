@@ -1,3 +1,4 @@
+import {loadEnvConfig} from '@next/env'
 import {StudioLogo, StudioNavbar, defineConfig} from 'sanity'
 import StudioNav from './components/StudioNav'
 import {deskTool} from 'sanity/desk'

@@ -1,3 +1,4 @@
+import {loadEnvConfig} from '@next/env'
 import Iframe from 'sanity-plugin-iframe-pane'
 import type { DefaultDocumentNodeResolver } from 'sanity/desk'
 
@@ -11,9 +12,7 @@ export const getDefaultDocumentNode: DefaultDocumentNodeResolver = (
         S.view
           .component(Iframe)
           .options({
-            url: `S{
-            	process.env.NEXT_PUBLIC_VERCEL_URL || "http://localhost:3000"
-            }/api/preview`,
+            url: `S{process.env.NEXT_PUBLIC_VERCEL_URL}/api/preview`,
             defaultSize: `desktop`,
             reload: {
             	button: true,
