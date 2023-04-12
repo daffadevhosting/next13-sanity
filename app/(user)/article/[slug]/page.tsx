@@ -1,6 +1,6 @@
 import { Post } from '@/typings';
 import { groq } from "next-sanity";
-import { client } from '../../../../lib/client';
+import { client } from '../../../../lib/sanity.client';
 import css from '../../../../styles/page.module.css';
 
 type Props = {

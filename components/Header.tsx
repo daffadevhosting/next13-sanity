@@ -11,7 +11,9 @@ function Header() {
                 </Link>
             </div>
             <div className={css.rightSide}>
-
+                <Link href="/studio">
+                    <span className={css.navLink}>Studio</span>
+                </Link>
             </div>
         </div>
         </header>

@@ -1,10 +1,10 @@
 import {loadEnvConfig} from '@next/env'
-import {StudioLogo, StudioNavbar, defineConfig} from 'sanity'
+import {StudioLogo, defineConfig} from 'sanity'
 import StudioNav from './components/StudioNav'
 import {deskTool} from 'sanity/desk'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemas'
-import {myTheme} from './theme'
+import {myTheme} from './lib/theme'
 import {getDefaultDocumentNode} from './structure'
 
 const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!;

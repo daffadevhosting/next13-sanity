@@ -10,6 +10,7 @@ type Base = {
 };
 
 interface Post extends Base {
+    [x: string]: ReactNode;
     author: Author;
     body: Block[];
     categories: Category[];

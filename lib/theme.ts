@@ -1,12 +1,12 @@
 import { buildLegacyTheme } from "sanity";
 
 const props = {
-    "--my-white": "#fff",
+    "--my-white": "#9E9E9E",
     "--my-black": "#191919",
-    "--my-brand": "#f7ab0a",
-    "--my-red": "#f4b400",
-    "--my-yellow": "#f4B400",
-    "--my-green": "#0f9d50",
+    "--my-brand": "#673AB7",
+    "--my-red": "#af0202",
+    "--my-yellow": "#FFC107",
+    "--my-green": "#4CAF50",
 };
 
 export const myTheme = buildLegacyTheme({

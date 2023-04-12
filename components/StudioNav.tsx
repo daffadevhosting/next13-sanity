@@ -6,7 +6,7 @@ function StudioNav(props: any) {
     return (
     <div className={css.navStudio}>
         <div className={css.navStudioNav}>
-            <Link href="/" className={css.navBack}><RiArrowGoBackFill/> Go Back</Link>
+            <Link href="/" className={css.navBack}><RiArrowGoBackFill/> Back To Blog</Link>
         </div>
         <>{props.renderDefault(props)}</>
     </div>

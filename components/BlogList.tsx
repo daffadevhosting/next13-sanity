@@ -29,7 +29,7 @@ function BlogList({ posts }: Props) {
                                 ))}
                             </div>
                             <span className={css.deskripsi}>
-                              <p>{post.description}</p>
+                            {`${post.body[0].children[0].text.substring(0, 200)}...`}
                               </span>
                             <Link className={css.buttonLink} href={`/article/${post.slug.current}`} key={post.slug.current}>Lanjut Baca</Link>
                           </div>

@@ -1,6 +1,6 @@
 import {previewData} from 'next/headers';
 import { groq } from "next-sanity";
-import { client } from '../../lib/client';
+import { client } from '../../lib/sanity.client';
 import PreviewSuspense from '../../components/PreviewSuspense';
 import PreviewBackground from '../../components/PreviewBlog';
 import BlogList from '../../components/BlogList';
@@ -21,7 +21,11 @@ export default async function Home() {
   if (previewData()) {
     return (
       <PreviewSuspense 
-      fallback="Load Data"
+      fallback={
+        <div role='status'>
+          <p>Load Data</p>
+        </div>
+      }
     >
       <PreviewBackground query={query} />
     </PreviewSuspense>
@@ -29,12 +33,6 @@ export default async function Home() {
   }
 
   const posts = await client.fetch(query);
-  
-  return (
-    <>
-    <div className={css.container}>
-    <BlogList posts={posts}/>
-    </div>
-    </>
-  )
+  return <div className={css.container}>
+    <BlogList posts={posts}/></div>;
 }
